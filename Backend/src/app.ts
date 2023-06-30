@@ -19,7 +19,7 @@ server.use(express.static('static'))
 server.use(expressRateLimit({
     max: 10, // maximum calls
     windowMs: 1000, // per time
-    message: 'Are You an Hacker?' // msg to send
+    message: 'Are You an Hacker??' // msg to send
 }))
 
 server.use(cors({ origin: 'http://localhost:4200' } ))
