@@ -1,0 +1,31 @@
+div{
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 18% 82% ;
+}
+
+header{
+    grid-column: span 6;
+    /* background: #dfdede9b; */
+    /* background: #31813dc1; */
+    /* background: (45deg, lightblue, lightskyblue) */
+}
+footer{
+    display: none;
+}
+
+main{
+    background:  #f5efef9b;
+    grid-column: span 6;
+    overflow: auto;
+    padding: 20px;
+}
+
+aside{
+    background: #64afe79b;
+    grid-column: span 0;
+    /* background: #31813dc1; */
+    /* display: none; */
+}
+

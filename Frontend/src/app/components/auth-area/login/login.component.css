@@ -1,0 +1,39 @@
+button{
+    display: inline-block;
+    font-weight: bold;
+    padding: 8px 30px 8px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    margin: 0% 22%;
+    /* margin: auto; */
+    /* text-align: center; */
+    font-size: 22px;
+    background-color: #64afe79b;
+    color: black;
+  }
+
+button:hover {
+   background-color:#1888dd9b;
+    color:white;
+}
+
+
+
+input {
+    /* padding: 10px 20px; */
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 20px;
+}
+label{
+  margin: 0;
+  min-width: 100%;
+  margin: 0;
+
+}
+  

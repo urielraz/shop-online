@@ -1,0 +1,82 @@
+.button {
+    /* background-color: #4CAF50; Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    /* background-color: #c4c4c4; color: black; */
+    width: 1%;
+    margin: 1px;
+    margin-top: 1px;
+    text-align: center;
+    color: white;
+    /* padding: 16px 32px; */
+    
+}
+button{
+    display: inline-block;
+    font-weight: bold;
+    padding: 5px 15px 5px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    margin: 4px 30px;
+    font-size: 16px;
+
+  }
+
+.deleteCompletelyItemFromCart {
+    margin: 4px 45px;
+
+    background-color: white;
+    color: black;
+    /* border: 2px solid #555555; */
+}
+.deleteCompletelyItemFromCart:hover {
+  background-color: #555555;
+  color: white;
+}
+.delAll{
+  background-color: white; 
+  color: black; 
+  /* border: 2px solid #f44336; */
+}
+.delAll:hover {
+  background-color: #f44336;
+  color: white;
+}
+img{
+  width: 30px;
+}
+
+a{
+  display: inline-block;
+    font-weight: bold;
+    padding: 8px ;
+    border-radius: 10px;
+    border: white 1px solid;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    color: black;
+    transition-duration: 0.4s;
+    margin: 0% 15%;
+    /* margin: auto; */
+    /* text-align: center; */
+    font-size: 22px;
+    background: rgb(180, 223, 250),;
+  
+}
+
+a:hover{
+  background: white;
+  color:  #64afe79b;
+}
+

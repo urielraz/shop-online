@@ -1,0 +1,45 @@
+.product{
+    position: relative;
+    padding: 10px;
+    display: flex;
+    border: 1px solid;
+    box-shadow: 1px 1px 5px rgb(0, 164, 252);
+    gap: 10px;
+    align-items: center;
+}
+
+.plus{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.minus{
+    position: absolute;
+    right: 5px;
+    bottom:  5px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.pincel{
+    position: absolute;
+    right: 5px;
+    bottom:  5px;
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: black;
+}
+
+img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.product div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}

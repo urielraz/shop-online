@@ -1,0 +1,7 @@
+<div>
+    
+
+<!-- <button  (click)="select_category(p.category_id)" *ngFor="let p of categories" categories="p">{{p.category_id}}-{{p.category_name}}</button> -->
+    
+    <app-product-card *ngFor="let p of products" [product]="p"></app-product-card>
+</div>

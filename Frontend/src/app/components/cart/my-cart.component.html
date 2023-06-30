@@ -1,0 +1,45 @@
+
+
+<div>
+
+    <h3>my cart</h3>
+    <hr>
+    
+    <!-- <mat-slide-toggle>Toggle me!</mat-slide-toggle> -->
+    <!-- מחיקת כל העגלה: -->
+    <button class="delAll" *ngIf="finalPrice>0 && path==='products-menu'"  (click)="delAllCart()">מחיקת כל העגלה</button>
+    <p *ngFor="let p of itemsOfCart"  itemsOfCart="p" >
+        
+        <!-- <div (click)="getImg(itemsOfCart.product_id)"></div> -->
+        <!-- {{getImg(p.product_id)}} -->
+        <!-- <img  crossorigin="anonymous" [src]="imgSrc + imgString" alt=""> -->
+        <br>
+        מוצר מס:
+        -{{p.product_id}}
+        
+        <br>
+        כמות:
+        -{{p.quantity}}
+
+        <br>
+        מחיר:
+        {{p.general_price}}₪
+        <br>
+        
+        <button *ngIf="path==='products-menu'" class="deleteCompletelyItemFromCart" (click)="deleteCompletelyItemFromCart(p.product_id)"> 🗑 מחק פריט</button>
+    </p>
+
+    <br>
+    מחיר סופי: 
+    {{finalPrice}}₪
+        
+    <br>
+    <br>
+    <br>
+    <a  *ngIf="finalPrice>0 && path==='products-menu'" href="order">קח אותי לקופה</a>
+
+    <a  *ngIf=" path==='order'" href="products-menu">חזור לחנות</a>
+
+
+</div>
+

@@ -1,0 +1,26 @@
+<div class="product" >
+
+    <!-- <span class="trash" (click)="deleteProduct()"></span> -->
+    
+    <span *ngIf="!auth.isAdmin()" class="plus" (click)="addItemToCart(product)">&#43;</span>
+    <span *ngIf="!auth.isAdmin()" class="minus" (click)="deleteItemFromCart(product)">&#8722;</span>
+
+    <a routerLink="../update/{{product.product_id}}" *ngIf="auth.isAdmin()" class="pincel" (click)="updateProduct(product)">&#9998;</a>
+
+    <!-- <span *ngIf="auth.isAdmin()" class="pincel" (click)="updateProduct(product)">&#9998;</span> -->
+
+
+
+    <!-- <img lass="card-img-top"  crossorigin="anonymous" [src]="imgSrc + product.imageName" alt=""> -->
+    <img  crossorigin="anonymous" [src]="imgSrc + product.imageName" alt="">
+
+    <div>
+        <span>
+            <b>{{ product.product_name }}</b>
+        </span>
+        <span>
+            {{ product.price | currency:"ILS" }}
+        </span>
+    </div>
+
+</div>

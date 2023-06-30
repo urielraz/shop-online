@@ -1,0 +1,39 @@
+#cart{
+    grid-column: span 1;
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* display: inline-block; */
+    gap: 80px;
+    /* box-sizing: unset */
+    /* display: none; */
+    /* height: 100%; */
+    padding: 20px;
+    background: #64afe79b;
+}
+.main{
+    background:  #f5efef9b;
+    grid-column: span 5;
+    /* overflow: auto; */
+    padding: 20px;
+}
+button{
+    display: inline-block;
+    font-weight: bold;
+    padding: 8px 30px 8px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    margin: 0% 35%;
+    /* margin: auto; */
+    /* text-align: center; */
+    font-size: 22px;
+
+  }
+
+button:hover {
+   background-color: #64afe79b;
+    color: white;
+}

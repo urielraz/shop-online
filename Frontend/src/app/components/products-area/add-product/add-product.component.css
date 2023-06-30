@@ -1,0 +1,18 @@
+
+form{
+    width: 100%;
+    margin-left: 0%;
+}
+label{
+    width: 90%;
+}
+
+#cancel:hover{
+    background-color: red;
+}
+button{
+    margin: 0% 10%;
+    padding: 11px ;
+    font-size: 19px;
+
+}

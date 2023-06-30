@@ -1,0 +1,65 @@
+<section>
+    <div id="cart">
+    
+        <app-my-cart ></app-my-cart>
+    </div>
+
+    <div class="main">
+    
+        
+    
+        <form class="box" (ngSubmit)="send()" #registerForm="ngForm">
+    
+            <h2>order</h2>
+            <h6>You can double click on the Inputs to fill the fields</h6>
+            <br>
+            <h6>אין אפשרות להזמין משלוח ליום שבו נרשמו כבר יותר מ3 הזמנות!
+                (למשל ביום ה20/06/2023)
+            </h6>
+            <br>
+            <input style="display: none;" type="text" name="city" [(ngModel)]="order.user_id" >
+    
+            <label>
+                <span>City:</span>
+                <input type="text"  name="city" (dblclick)="fillCity()" [(ngModel)]="order.city" minlength="2" required #city="ngModel">
+
+                <span class="red" *ngIf="city.errors?.['required'] && city.touched">Missing city!</span>
+                <span class="red" *ngIf="city.errors?.['minlength'] && city.touched">Min length 2!</span>
+            </label>
+    
+            <label>
+                <span>Street:</span>
+                <input type="text" name="street" (dblclick)="fillStreet()" [(ngModel)]="order.street" minlength="2" required #street="ngModel">
+
+                <span class="red" *ngIf="street.errors?.['required'] && street.touched">Missing street!</span>
+                <span class="red" *ngIf="street.errors?.['minlength'] && street.touched">Min length 2!</span>
+            </label>
+    
+            <label>
+                <span>Shipping Date:</span>
+                <input (change)="ifDate()" type="date" name="date_delivery" [(ngModel)]="order.date_delivery"  required #date="ngModel">
+
+                <span class="red" *ngIf="date.errors?.['required'] && date.touched">Missing date!</span>
+                <!-- <span class="red" *ngIf="date.errors?.['minlength'] && date.touched">Min length 2!</span> -->
+                <span *ngIf="ifdateTaken==false" class="red" style="font-size: 18px;" >לצערנו היום הזה כבר מלא</span>
+
+            </label>
+    
+            <hr>
+    
+            <label>
+                <span>Credit Card:</span>
+                <input type="number" name="credit_card" [(ngModel)]="order.credit_card"  required #credit_card="ngModel">
+
+                <span class="red" *ngIf="credit_card.errors?.['required'] && credit_card.touched">Missing credit_card!</span>
+               
+            </label>
+    
+            <button [disabled]="registerForm.invalid || ifdateTaken==false">Order</button>
+    
+        </form>
+    </div>
+    <!-- <script src="/path/to/card.js"></script> -->
+    
+    
+</section>

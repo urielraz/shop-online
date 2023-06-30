@@ -1,0 +1,35 @@
+.mat-mdc-form-field {
+    margin-top: 16px;
+  }
+
+  button{
+    margin: auto;
+    /* margin-top: 10px;
+    margin: 5px; */
+    
+    /* width: 15%; */
+    box-sizing: border-box;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    background: #64afe79b;
+    padding: 10px 30px;
+    border: unset;
+    border-radius: 7px;
+    cursor: pointer;
+}
+#register_btn{
+  text-align: center;
+  display: block;
+}
+button:hover {
+  background-color:#1684d89b;
+  color: white;
+}
+  
+
+#register_btn:hover {
+  background-color: white;
+  color: #64afe79b;
+}
+  

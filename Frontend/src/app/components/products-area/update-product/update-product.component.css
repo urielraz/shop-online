@@ -1,0 +1,30 @@
+
+form{
+    width: 100%;
+    margin-left: 20%;
+    /* display: inline; */
+}
+
+#cancel:hover{
+    background-color: red;
+}
+
+img{
+    width: 25%;
+    margin: 5px;
+    /* display: inline-block; */
+    /* text-align: right; */
+}
+
+label{
+     /* padding: 10px 20px; */
+    /* box-sizing: border-box; */
+    width: 60%;
+    /* margin-bottom: 20px; */
+    /* border-radius: 8px; */
+    /* border: 2px solid  #64afe79b; */
+
+}
+button{
+    margin: 0% 20%;
+}

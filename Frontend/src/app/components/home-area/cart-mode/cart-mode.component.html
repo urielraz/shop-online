@@ -1,0 +1,29 @@
+<div *ngIf="!auth.isAdmin()" >
+
+    <div *ngIf="check_cart_by_user === 0">
+        <a href="products-menu" (click)="open_new_cart_for_user()" ><button>Welcome to your first shopping!!!
+            <br>
+            <br>
+            click here to start the experience 
+        </button></a>
+    </div>
+    
+    <div *ngIf="check_cart_by_user === -1">
+        <a href="products-menu" (click)="open_new_cart_for_user()" > <button>start shopping with new cart</button> </a>
+        <br>
+        <br>
+        Your last purchase was in {{last_order.date_order}}
+        <br>
+        <br>
+        Your last purchase was in the amount of {{last_order.final_price}} ₪
+    </div>
+
+    <div *ngIf="check_cart_by_user > 0">
+        <a  href="products-menu" ><button>resume shopping</button></a>
+
+    </div>
+</div>
+
+<div *ngIf="auth.isAdmin()">
+    <a  href="products-menu" ><button>go to Admin pannel</button></a>
+</div>

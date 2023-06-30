@@ -1,0 +1,36 @@
+<section class="all">
+
+    <div  *ngIf="!auth.isAdmin()" id="cart">
+    
+        <app-my-cart></app-my-cart>
+    </div>
+
+    <div  *ngIf="auth.isAdmin()" id="cart">
+        
+        <app-admin></app-admin>
+    </div>
+
+    <div class="main">
+
+        
+        <app-search-product></app-search-product>
+        
+        <br>
+        
+        <button class="item"  (click)="select_category(p.category_id)" *ngFor="let p of categories"  categories="p">{{p.category_id}} - {{p.category_name}}</button>
+        
+        <br>
+        <br>
+
+        <div class="pro" *ngIf="products">
+            <app-product-card (childEvent)="updateProduct($event)" *ngFor="let p of products" [product]="p"></app-product-card>
+        </div>
+        
+    </div>
+
+
+</section>
+
+
+<!-- <app-products-list ></app-products-list> -->
+

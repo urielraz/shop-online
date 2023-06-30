@@ -1,0 +1,43 @@
+<div class="box">
+    
+    
+    <form (ngSubmit)="update()">
+        
+        
+        <h2>Update Product <img  crossorigin="anonymous" [src]="imgSrc + imgName" > </h2>
+        
+           
+        <label>
+            <span>Name:</span>
+            <input type="text" name="name" [(ngModel)]="product.product_name">
+        </label>
+
+        <label>
+            <span>Price:</span>
+            <input type="number" name="price" [(ngModel)]="product.price">
+        </label>
+
+        <label>
+            <span>category:</span>
+
+            <select name="category" [(ngModel)]="product.product_category" >
+                <option  value={{c.category_id}}  *ngFor="let c of categories" categories="c">{{c.category_id}}-{{c.category_name}}</option>
+            </select>
+            <!-- <input type="number" > -->
+        </label>
+
+        <label>
+            <span>Image:</span>
+            <input type="file" name="imageName" accept="image/*" #productImage>
+        </label>
+
+        <button>Save</button>
+        
+        <br>
+        <br>
+
+         <button id="cancel" (click)="cancel()" type="button">cancel</button>
+
+
+    </form>
+</div>

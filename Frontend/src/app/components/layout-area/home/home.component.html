@@ -1,0 +1,58 @@
+<div id="all">
+
+
+         
+    <div id="C">
+            
+        <img id="img1" src="../../../../assets/images/3413661-46.jpg" alt="" >   
+        <!-- <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2Fjeyenak%2Fabout%2F%3Fref%3Dpage_internal&psig=AOvVaw01phZS_oX-IeIY_Zoch_Fz&ust=1682590293417000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCJjsgLinx_4CFQAAAAAdAAAAABAE" alt="" > -->
+        <br>
+        <br>
+        <div id="txt">
+            כמות המוצרים בחנות:
+            {{this.count}}
+            <br>
+            כמות ההזמנות מהחנות:
+            {{this.orders}}
+        </div>
+    </div>
+
+        
+    <!-- <div class="dev"></div> -->
+
+   
+    
+    <!-- <div class="dev"></div> -->
+
+    <div id="B">
+  
+        <h3>Shop Online</h3>
+        <h6>הסל הזול והמשתלם בישראל</h6>
+        <p>ע"פ סקר חדשות כלכלה</p>
+        <img id="img2" src="../../../../assets/images/images (1).jfif" alt="" >
+    </div>
+    
+    <div id="A">
+
+        <app-cart-mode id="loggedin" *ngIf="user.isLoggedin()"></app-cart-mode>
+
+
+        <div *ngIf="!user.isLoggedin()">
+            registered?
+            <br>
+            <br>
+            <app-login></app-login>
+            <br>
+            not regustered?
+            <a  href="register"><button id="register">sign up</button></a>
+        </div>
+
+         
+
+
+      
+    </div>
+   
+    <!-- <app-search></app-search> -->
+ 
+</div>
